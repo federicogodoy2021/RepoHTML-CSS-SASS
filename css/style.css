@@ -325,7 +325,7 @@ body {
   padding-top: 100px;
 }
 
-.artFutbol, .p3, .artTenis, .artBasquet {
+.artFutbol, .artTenis, .artBasquet {
   grid-area: futbol;
   background-image: url("../img/futbol2.jpg");
   border: black 4px solid;
@@ -335,7 +335,7 @@ body {
   background-size: contain;
 }
 
-.p1, .p2 {
+.p1, .p3, .p2 {
   grid-area: pfutbol;
   background-color: white;
   border: black 4px solid;

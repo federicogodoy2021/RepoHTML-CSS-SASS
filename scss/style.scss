@@ -257,7 +257,7 @@ padding-right: 10px;
     background-image: url("../img/tenis.jpg");
 }
 .p3{
-    @extend .artFutbol;
+    @extend .p1;
     grid-area: ptenis;
 }
 
