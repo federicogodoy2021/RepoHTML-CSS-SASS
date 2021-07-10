@@ -1,0 +1,423 @@
+@import "layout/header";
+@import "utilities/variables";
+@import "layout/footer";
+@import "base/reset";
+@import "base/tags";
+
+
+
+//Propiedades del INDEX
+.portadaPrincipal{
+    background-image: url("../img/campo3.jpg");
+    background-repeat: no-repeat;
+    height: 900px;
+    background-size: cover;
+    background-position:center center;
+}
+
+
+#parrafoEmbebido{
+    color: rgba(255, 255, 255, 0.836);
+    text-align:justify;
+    font-size: 24px;
+}
+
+.bloqueTexto {
+    width: 80%;
+    position:relative; 
+    top: 70px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+#reservas{
+    padding: 10px;
+    margin-top: 10px;
+}
+.reservas{
+    display: inline-block;
+    width: 45%;
+}
+
+.subtitulos1{
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.CompAsociados{
+text-align: justify;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+
+.seccionReservas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#mapaForm{
+    justify-content:space-evenly;
+    padding: 50px;
+}
+#mapa{
+    padding: 10px;
+    margin-top: 10px;
+}
+.mapa{
+    width: 100%; 
+    height:80%;
+    align-items: baseline;
+    position: relative;
+    top: 13px; 
+}
+
+//Propiedades de QUIENES SOMOS
+.quienesSomos{
+    width: 100%;
+    height: 1000px;
+    background-image: url("../img/equipo.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    text-align: justify ;
+    color:black;
+    font-size: 24px;
+    
+}
+.mainQuienesSomos{
+    background-color: $fondos;
+}
+.quienesSomos p{
+    text-align: justify;
+    margin: 10px;
+}
+
+//Propiedades de CONTACTO
+
+.ayuda{
+    text-align: center;
+}
+
+.campoNombre:focus{
+    width: 220px;
+    transition: width 2s;
+}
+
+.contactanos legend{
+    margin: 0px;
+}
+.campoNombre{
+    position:relative;
+    left: 20px;
+    width: 200px;
+
+}
+.campoEmail:focus{
+    width: 220px;
+    transition: width 2s;
+}
+
+.campoEmail{
+    position: relative;
+    left: 43px;
+    width: 200px;
+}
+.motivo{
+    position: relative;
+    bottom: 35px;
+    left: 230px;
+}
+#cajaContacto{
+    display: flex;
+    justify-content: center;    
+}
+.contactanos{
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    width: 600px;
+
+}
+.mainAyuda{
+    height: 700px;
+}
+.comentario:focus{
+    height: 200px;
+    width: 575px;
+    transition: height 3s, width 3s;
+}
+.comentario{
+    width: 500px;
+    height: 100px;
+}
+
+
+//Propiedades del COMPLEJOS
+
+.todosLosComplejos{
+    background-color: white;
+    position: center;
+    padding-bottom: 20px;
+    
+}
+.complejosFutbol{
+    background-color: white;
+    height: 300px;
+    width: 1100px;
+    background-size: 500px;
+    background-repeat: no-repeat; 
+    display: block;
+    margin-left: 100px;
+    text-align: center;
+    border: $bordes;
+    background-image: url("../img/futbol5.jpg");
+}
+
+.complejosFutbol p{
+    position: relative;
+    justify-content: center;
+    left: 520px;
+    width: 50%;;
+}
+.complejosBasquet{
+    @extend .complejosFutbol;
+    background-image: url("../img/canchabasquet.jpeg");
+}
+
+.complejosBasquet p{
+    position: relative;
+    left: 520px;
+    width: 50%;;
+}
+.complejosTenis{
+    @extend .complejosFutbol;
+    background-image: url("../img/canchatenis.jpeg");
+}
+.complejosTenis p{
+    position: relative;
+    left: 520px;
+    width: 50%;
+}
+
+//Propiedades de DEPORTES
+
+.todosLosDeportes{
+    display: grid;
+    grid-template-areas:"futbol pfutbol"
+                        "basquet pbasquet"
+                        "tenis ptenis";
+    grid-template-columns: 208px 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-column-gap: 20px; 
+    grid-row-gap: 20px;
+    align-items:center;
+    justify-content:center;
+    padding: 20px;
+    padding-top: 100px;
+
+}
+
+.artFutbol{
+    grid-area: futbol;
+    background-image: url("../img/futbol2.jpg");
+    border: $bordes;
+    background-repeat: no-repeat;
+    height: 200px;
+    width:200px;
+    background-size: contain;
+}   
+
+.p1{
+    grid-area: pfutbol;
+    background-color: white;
+    border: $bordes;
+    min-height: 200px;
+    max-height: 300px;
+    margin: 0px;
+
+
+}
+.artBasquet{
+    @extend .artFutbol;
+    grid-area: basquet ;
+    background-image: url("../img/basquet.jpg");
+
+}   
+
+.p2{
+    @extend .p1;
+    grid-area: pbasquet;
+
+}   
+.artTenis{
+    @extend .artFutbol;
+    grid-area: tenis;
+    background-image: url("../img/tenis.jpg");
+}
+.p3{
+    @extend .artFutbol;
+    grid-area: ptenis;
+}
+
+//Propiedades de DESAFIOS
+
+.desafio{
+    display: grid;
+    grid-template-columns: 30% 55%;
+    grid-template-rows: 35% 20% 40%;
+    grid-template-areas: "user1 encuentro1"
+                         "user1 postulados1"
+                         "user1 info";
+    grid-row-gap: 10px;
+    padding: 10px;
+    justify-content:space-evenly;
+    align-content: center;
+    border: $bordes;
+    margin: 80px;
+    height: 100%;
+}
+.user{
+    grid-area: user1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.fotoNombreCiudad{
+    background-image: linear-gradient(to top, rgb(121, 91, 62), rgb(247, 181, 58));
+    display: flex; 
+    flex-direction: row;  
+    border: $bordes;
+    border-radius:10px;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.valoracion{
+    background-image: linear-gradient(to top, rgb(121, 91, 62), rgb(247, 181, 58));
+    border: $bordes;
+    border-radius: 10px;
+    grid-area: valoracion;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+.reseña{
+    background-image: linear-gradient(to top, rgb(121, 91, 62), rgb(247, 181, 58));
+    border: $bordes;
+    border-radius: 10px;
+    grid-area: reseña;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+
+}
+
+:hover.fotoUser{
+    transform: scale(1.2,1.2);
+}
+.fotoUser{
+    background-image: url("../img/user.jpg");
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 65px;
+    border: $bordes;
+
+}
+.nombreCiudad{
+    padding-left: 40px;
+}
+.nombreUser{
+    text-align: left
+}
+.ciudadUser{
+    text-align: left;
+}
+
+.encuentro{
+    background-image: linear-gradient(to top, rgb(121, 91, 62), rgb(247, 181, 58));
+    border: $bordes;
+    border-radius: 10px;
+    grid-area: encuentro1;
+    text-align:start;
+    padding-left: 10px;
+}
+
+.postulados{
+    grid-area: postulados1;
+    height: 100%;
+
+}
+.infoComplejo{
+    background-image: linear-gradient(to top, rgb(121, 91, 62), rgb(247, 181, 58));
+    border: $bordes;
+    border-radius: 10px;
+    grid-area: info;
+    text-align: center;
+    padding: 10px;
+}
+
+.infoComplejo p{
+    text-align: justify;
+    width: 50%;
+
+}
+
+.mainDesafios{
+    padding: 10px;
+    height: 100%;
+}
+
+.quieroJugar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.condiciones{
+    text-align: center;
+}
+.jugadores{
+    text-align: center;
+}
+.infoCancha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+:hover.mapaDesafios{
+    transform: scale(1.1,1.1);
+}
+.mapaDesafios{
+    width: 40%;
+}
+
+@keyframes giro{
+    0%{ transform: rotate3d(0,1,0,45deg);}
+    50%{ transform: rotate3d(0,1,0,-45deg);}
+    100%{ transform: rotate3d(0,1,0,45deg);}
+
+}
+
+
+@media (max-width: 880px){
+    .titulosGral{
+        font-size: 60px;
+}
+}
+@media (max-width: 480px){
+    .titulosGral{
+        font-size: 40px;
+        }
+}
+@media (max-width: 992px){
+    .encabezado__logo{
+        display: none; 
+}
+}
+
