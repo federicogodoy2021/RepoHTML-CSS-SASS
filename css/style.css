@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 .headerIndex {
   margin: 0px;
   padding: 0px;
@@ -139,16 +140,16 @@ body {
 
 #parrafoEmbebido {
   color: rgba(255, 255, 255, 0.836);
-  text-align: justify;
-  font-size: 40px;
+  text-align: center;
+  align-content: center;
+  font-size: 35px;
+  font-family: "Fjalla One", sans-serif;
+  margin: 0px;
+  padding: 10px;
 }
 
-.bloqueTexto {
-  width: 80%;
-  position: relative;
-  top: 70px;
-  padding-left: 110px;
-  padding-right: 110px;
+.caja1, .caja3, .caja2 {
+  margin: 0px;
 }
 
 #reservas {
@@ -529,6 +530,24 @@ body {
 @media (max-width: 992px) {
   .encabezado__logo {
     display: none;
+  }
+}
+@media (max-width: 320px) {
+  #parrafoEmbebido {
+    font-size: 10px;
+    margin: 0px;
+  }
+}
+@media (max-width: 480px) {
+  #parrafoEmbebido {
+    font-size: 15px;
+    margin: 0px;
+  }
+}
+@media (max-width: 800px) {
+  #parrafoEmbebido {
+    font-size: 25px;
+    margin: 0px;
   }
 }
 

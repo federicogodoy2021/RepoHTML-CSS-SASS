@@ -41,11 +41,11 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ItemsNav">
                         <li><a class="nav-link active" title="Portada Principal" href="index.html">|HOME|</a></li>
-                        <li><a class="nav-link active" title="Sobre nosotros" href="pages/quienessomos.html">| QUIENES SOMOS? |</a></li>
-                        <li><a class="nav-link active" title="Elegí Tu Deporte" href="pages/deportes.html">| DEPORTES |</a></li>
-                        <li><a class="nav-link active" title="Elegí Tu Complejo" href="pages/complejos.html">| COMPLEJOS |</a></li>
-                        <li><a class="nav-link active" title="Desafía a tu rival" href="pages/desafios.html">| DESAFÍOS |</a></li>
-                        <li><a class="nav-link active" title="Contactanos" href="pages/contacto.html">| CONTACTO |</a></li>
+                        <li><a class="nav-link active" title="Sobre nosotros" href="pages/quienessomos.html">|QUIENES SOMOS?|</a></li>
+                        <li><a class="nav-link active" title="Elegí Tu Deporte" href="pages/deportes.html">|DEPORTES|</a></li>
+                        <li><a class="nav-link active" title="Elegí Tu Complejo" href="pages/complejos.html">|COMPLEJOS|</a></li>
+                        <li><a class="nav-link active" title="Desafía a tu rival" href="pages/desafios.html">|DESAFÍOS|</a></li>
+                        <li><a class="nav-link active" title="Contactanos" href="pages/contacto.html">|CONTACTO|</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,12 +62,31 @@
            
             <!--Texto embebido en la imagen explicando brevemente en que consiste la app-->
             <!--INICIO BOOTSTRAP EN DESCRIPCION DE LA PAGINA-->
-            <div class="container">
-                <br><br>
-                <p class="lead" id="parrafoEmbebido">Stadium Rosario llegó para simplificarte las cosas. Mediante nuestra app podrás reservar el complejo deportivo que más se adapte a vos. En este sitio podes buscar la mejor cancha filtrando la información en base a su precio, cercanía, disponibilidad, etc.
-                Entre muchas funciones más, la app te permite desafiar a otros equipos de cualquiera de los deportes grupales que puedas imaginar (futbol, basquet, paintball, etc) o simplemente a a otros jugadores individuales (tenis, paddle, etc).</p> 
+                
+            <div class="container" id="parrafoEmbebido">
+                <div class="row justify-content-start caja1">
+                    <div class="col-4"  data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="100">
+                        <p>Reservá tu cancha en tan solo un click</p>
+                    </div>
+                    <div class="col-4"></div>
+                    <div class="col-4"></div>
+                </div><br><br>
+                <div class="row justify-content-center caja2">
+                    <div class="col-4"></div>
+                    <div class="col-4"  data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="100">
+                        <o>Desafía facilmente a un amigo a disputar un encuentro deportivo</o>
+                    </div>
+                    <div class="col-4"></div>
+                </div><br><br>
+                <div class="row justify-content-end caja3">
+                    <div class="col-4"></div>
+                    <div class="col-4"></div>
+                    <div class="col-4" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="100">
+                        <p>Jugar y divertirse nunca fue tan facil</p>
+                    </div>
+                </div>
             </div>
-            <!--FIN BOOTSTRAP EN DESCRIPCION DE LA PAGINA-->
+        <!--FIN BOOTSTRAP EN DESCRIPCION DE LA PAGINA-->
 
         </div>
         <hr><br>
@@ -76,7 +95,12 @@
         <section>
             <!--Subtitulo de la sección-->
             <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="100" class="complejosAsociados">Complejos Asociados</h2>
-            <p class="CompAsociados">Contamos con más de 50 complejos asociados en las principales ciudades del Gran Rosario. Cada complejo ofrece distintas disciplinas para practicar y muchos servicios extras que los destacan sobre el resto</p>
+            <p class="CompAsociados">
+                Stadium Rosario llegó para simplificarte las cosas. Mediante nuestra app podrás reservar el complejo deportivo que más se adapte a vos. En este sitio podes buscar la mejor cancha filtrando la información en base a su precio, cercanía, disponibilidad, etc. Entre muchas funciones más, la app te permite desafiar a otros equipos de cualquiera de los deportes grupales que puedas imaginar (futbol, basquet, paintball, etc) o simplemente a a otros jugadores individuales (tenis, paddle, etc).<br><br>
+
+                Contamos con más de 50 complejos asociados en las principales ciudades del Gran Rosario. Cada complejo ofrece distintas disciplinas para practicar y muchos servicios extras que los destacan sobre el resto.
+
+            </p>
     
         </section>
         <br><hr><br>
@@ -99,7 +123,7 @@
             
             
                 <!--Subtitulo de la sección-->
-                <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="100">Reservas</h2>
+                <h2 data-aos="fade-left"  data-aos-duration="2000" data-aos-delay="100">Reservas</h2>
                 <!--Formulario de reservas, con el tipo de deporte a realizar, el día y la hora. Podrìa colocar el complejo como un criterio màs o simplemente dada las fecha y hora me arroje los distintos complejos disponibles-->
                 <form action="" method="get" class="mb-3">
 
@@ -110,7 +134,7 @@
                             <div class="col-lg-5">
                                 <legend data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">Deporte:</legend>
                             </div>
-                            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="col-lg-5">
+                            <div data-aos="fade-up"  data-aos-duration="2000" data-aos-delay="100" class="col-lg-5">
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Elige un deporte</option>
                                     <option value="0">Futbol</option>
