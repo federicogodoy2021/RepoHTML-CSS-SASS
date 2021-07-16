@@ -15,11 +15,10 @@
             animation-duration: 10s;
             animation-iteration-count: infinite;
 }
-        .titulosGral{
+        #titulosGral{
             font-family: 'Monoton', cursive;
             text-align: center;
             text-decoration:none;
-            font-size: 99px;
             font-weight: 300;
 }
         .navegador{
@@ -64,4 +63,20 @@
     background-color: $fondos;
     border-top: 4px solid black;
     border-bottom: 4px solid black
+}
+
+@media (max-width: 1600px){
+    #titulosGral{
+         font-size: 99px;
+}
+} 
+@media (max-width: 880px){
+    #titulosGral{
+        font-size: 80px;
+}
+}
+@media (max-width: 480px){
+    #titulosGral{
+        font-size: 40px;
+}
 }

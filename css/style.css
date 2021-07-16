@@ -11,11 +11,10 @@
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
-.headerIndex .titulosGral {
+.headerIndex #titulosGral {
   font-family: "Monoton", cursive;
   text-align: center;
   text-decoration: none;
-  font-size: 99px;
   font-weight: 300;
 }
 .headerIndex .navegador {
@@ -58,6 +57,21 @@
   border-bottom: 4px solid black;
 }
 
+@media (max-width: 1600px) {
+  #titulosGral {
+    font-size: 99px;
+  }
+}
+@media (max-width: 880px) {
+  #titulosGral {
+    font-size: 80px;
+  }
+}
+@media (max-width: 480px) {
+  #titulosGral {
+    font-size: 40px;
+  }
+}
 .footer {
   background-color: white;
 }
@@ -126,7 +140,7 @@ body {
 #parrafoEmbebido {
   color: rgba(255, 255, 255, 0.836);
   text-align: justify;
-  font-size: 24px;
+  font-size: 40px;
 }
 
 .bloqueTexto {
@@ -152,7 +166,7 @@ body {
   padding-left: 10px;
 }
 
-.CompAsociados {
+.CompAsociados, .complejosAsociados {
   text-align: justify;
   padding-left: 10px;
   padding-right: 10px;
@@ -510,16 +524,6 @@ body {
   }
   100% {
     transform: rotate3d(0, 1, 0, 45deg);
-  }
-}
-@media (max-width: 880px) {
-  .titulosGral {
-    font-size: 60px;
-  }
-}
-@media (max-width: 480px) {
-  .titulosGral {
-    font-size: 40px;
   }
 }
 @media (max-width: 992px) {

@@ -19,7 +19,7 @@
 #parrafoEmbebido{
     color: rgba(255, 255, 255, 0.836);
     text-align:justify;
-    font-size: 24px;
+    font-size: 40px;
 }
 
 .bloqueTexto {
@@ -49,6 +49,10 @@ text-align: justify;
 padding-left: 10px;
 padding-right: 10px;
 
+}
+
+.complejosAsociados{
+    @extend .CompAsociados;
 }
 
 .seccionReservas{
@@ -405,16 +409,6 @@ padding-right: 10px;
 }
 
 
-@media (max-width: 880px){
-    .titulosGral{
-        font-size: 60px;
-}
-}
-@media (max-width: 480px){
-    .titulosGral{
-        font-size: 40px;
-        }
-}
 @media (max-width: 992px){
     .encabezado__logo{
         display: none; 
