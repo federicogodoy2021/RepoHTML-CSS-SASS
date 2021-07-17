@@ -54,8 +54,8 @@
   margin: 0px;
   text-align: center;
   background-color: chocolate;
-  border-top: 4px solid black;
   border-bottom: 4px solid black;
+  padding: 20px;
 }
 
 @media (max-width: 1600px) {
@@ -125,7 +125,7 @@ main {
 }
 
 body {
-  font-family: "Baloo 2", cursive;
+  font-family: "Fjalla One", sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
@@ -141,15 +141,16 @@ body {
 #parrafoEmbebido {
   color: rgba(255, 255, 255, 0.836);
   text-align: center;
+  display: contents;
   align-content: center;
   font-size: 35px;
-  font-family: "Fjalla One", sans-serif;
   margin: 0px;
   padding: 10px;
 }
 
 .caja1, .caja3, .caja2 {
   margin: 0px;
+  padding-top: 50px;
 }
 
 #reservas {
@@ -169,8 +170,9 @@ body {
 
 .CompAsociados, .complejosAsociados {
   text-align: justify;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 20px;
+  padding-bottom: 0px;
+  margin-top: 20px;
 }
 
 .seccionReservas {
@@ -197,24 +199,22 @@ body {
   top: 13px;
 }
 
-.quienesSomos {
+.mainQuienesSomos {
+  background-color: chocolate;
+}
+.mainQuienesSomos .quienesSomos {
   width: 100%;
-  height: 1000px;
+  height: 500px;
   background-image: url("../img/equipo.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   text-align: justify;
   color: black;
   font-size: 24px;
 }
-
-.mainQuienesSomos {
-  background-color: chocolate;
-}
-
-.quienesSomos p {
+.mainQuienesSomos p {
+  padding: 10px;
   text-align: justify;
-  margin: 10px;
 }
 
 .ayuda {
@@ -234,6 +234,7 @@ body {
   position: relative;
   left: 20px;
   width: 200px;
+  margin: 10px;
 }
 
 .campoEmail:focus {
@@ -243,8 +244,9 @@ body {
 
 .campoEmail {
   position: relative;
-  left: 43px;
+  left: 39px;
   width: 200px;
+  margin: 10px;
 }
 
 .motivo {
@@ -461,12 +463,14 @@ body {
   border-radius: 10px;
   grid-area: encuentro1;
   text-align: start;
-  padding-left: 10px;
+  padding: 20px;
+  margin: -10px;
 }
 
 .postulados {
   grid-area: postulados1;
   height: 100%;
+  padding: 10px;
 }
 
 .infoComplejo {
@@ -476,6 +480,7 @@ body {
   grid-area: info;
   text-align: center;
   padding: 10px;
+  margin: -10px;
 }
 
 .infoComplejo p {
@@ -514,6 +519,8 @@ body {
 
 .mapaDesafios {
   width: 40%;
+  margin: 10px;
+  padding-bottom: 20px;
 }
 
 @keyframes giro {
@@ -548,6 +555,17 @@ body {
   #parrafoEmbebido {
     font-size: 25px;
     margin: 0px;
+  }
+}
+@media (max-width: 800px) {
+  #parrafoEmbebido {
+    font-size: 25px;
+    margin: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .mapa {
+    top: 5px;
   }
 }
 

@@ -61,8 +61,8 @@
     margin: 0px;
     text-align: $textAlign;
     background-color: $fondos;
-    border-top: 4px solid black;
-    border-bottom: 4px solid black
+    border-bottom: 4px solid black;
+    padding: 20px;
 }
 
 @media (max-width: 1600px){

@@ -20,14 +20,16 @@
 #parrafoEmbebido{
     color: rgba(255, 255, 255, 0.836);
     text-align:center;
+    display: contents;
     align-content: center;
     font-size: 35px;
-    font-family: 'Fjalla One', sans-serif;
     margin: 0px;
     padding: 10px;
 }
 .caja1{
     margin: 0px;
+    padding-top: 50px;
+
 }
 .caja2{
     @extend .caja1;
@@ -51,9 +53,10 @@
 }
 
 .CompAsociados{
-text-align: justify;
-padding-left: 10px;
-padding-right: 10px;
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-top: 20px;
 
 }
 
@@ -84,24 +87,30 @@ padding-right: 10px;
 }
 
 //Propiedades de QUIENES SOMOS
-.quienesSomos{
-    width: 100%;
-    height: 1000px;
-    background-image: url("../img/equipo.jpg");
-    background-repeat: no-repeat;
-    background-size:contain;
-    text-align: justify ;
-    color:black;
-    font-size: 24px;
+
+
+
     
-}
 .mainQuienesSomos{
     background-color: $fondos;
+
+    .quienesSomos{
+        width: 100%;
+        height: 500px;
+        background-image: url("../img/equipo.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        text-align: justify ;
+        color:black;
+        font-size: 24px;        
+    
 }
-.quienesSomos p{
-    text-align: justify;
-    margin: 10px;
+    p{  
+        padding: 10px;
+        text-align: justify;
 }
+}
+
 
 //Propiedades de CONTACTO
 
@@ -121,6 +130,7 @@ padding-right: 10px;
     position:relative;
     left: 20px;
     width: 200px;
+    margin: 10px;
 
 }
 .campoEmail:focus{
@@ -130,8 +140,10 @@ padding-right: 10px;
 
 .campoEmail{
     position: relative;
-    left: 43px;
+    left: 39px;
     width: 200px;
+    margin: 10px;
+
 }
 .motivo{
     position: relative;
@@ -355,12 +367,14 @@ padding-right: 10px;
     border-radius: 10px;
     grid-area: encuentro1;
     text-align:start;
-    padding-left: 10px;
+    padding: 20px;
+    margin: -10px;
 }
 
 .postulados{
     grid-area: postulados1;
     height: 100%;
+    padding: 10px;
 
 }
 .infoComplejo{
@@ -370,6 +384,7 @@ padding-right: 10px;
     grid-area: info;
     text-align: center;
     padding: 10px;
+    margin: -10px;
 }
 
 .infoComplejo p{
@@ -405,6 +420,8 @@ padding-right: 10px;
 }
 .mapaDesafios{
     width: 40%;
+    margin: 10px;
+    padding-bottom: 20px ;
 }
 
 @keyframes giro{
@@ -439,3 +456,17 @@ padding-right: 10px;
         margin: 0px;
 }
 }
+
+@media (max-width: 800px){
+    #parrafoEmbebido{
+        font-size: 25px;
+        margin: 0px;
+}
+}
+
+@media (max-width:768px){
+    .mapa{
+        top: 5px; 
+    }
+}
+
