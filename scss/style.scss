@@ -8,48 +8,35 @@
 
 
 //Propiedades del INDEX
+
 .portadaPrincipal{
     background-image: url("../img/campo3.jpg");
     background-repeat: no-repeat;
     height: 900px;
     background-size: cover;
     background-position:center center;
-}
 
 
-#parrafoEmbebido{
-    color: rgba(255, 255, 255, 0.836);
-    text-align:center;
-    display: contents;
-    align-content: center;
-    font-size: 35px;
-    margin: 0px;
-    padding: 10px;
-}
-.caja1{
-    margin: 0px;
-    padding-top: 50px;
+        #parrafoEmbebido{
+            color: rgba(255, 255, 255, 0.836);
+            text-align:center;
+            display: contents;
+            align-content: center;
+            font-size: 35px;
+            margin: 0px;
+            padding: 10px;
 
+                .caja1{
+                    margin: 0px;
+                    padding-top: 50px;
 }
-.caja2{
-    @extend .caja1;
+                .caja2{
+                    @extend .caja1;
 }
-.caja3{
-    @extend .caja1;
+                .caja3{
+                    @extend .caja1;
 }
-
-#reservas{
-    padding: 10px;
-    margin-top: 10px;
 }
-.reservas{
-    display: inline-block;
-    width: 45%;
-}
-
-.subtitulos1{
-    font-size: 25px;
-    padding-left: 10px;
 }
 
 .CompAsociados{
@@ -60,7 +47,33 @@
 
 }
 
-.complejosAsociados{
+.descripcionPag{
+    @extend .CompAsociados;
+}
+
+#mapaForm{
+    justify-content:space-evenly;
+    padding: 50px;
+
+        #reservas{
+            padding: 10px;
+}        
+
+        #mapa{
+            padding: 10px;
+            padding-bottom: 20px;
+            
+
+                .mapa{
+                    width: 100%; 
+                    height: 92%;
+                    padding-top: 10px;
+                    padding-bottom: 20px;
+}
+}
+}
+
+.descripcionPag{
     @extend .CompAsociados;
 }
 
@@ -70,44 +83,26 @@
     justify-content: space-around;
 }
 
-#mapaForm{
-    justify-content:space-evenly;
-    padding: 50px;
-}
-#mapa{
-    padding: 10px;
-    margin-top: 10px;
-}
-.mapa{
-    width: 100%; 
-    height:80%;
-    align-items: baseline;
-    position: relative;
-    top: 13px; 
-}
 
 //Propiedades de QUIENES SOMOS
-
-
-
     
 .mainQuienesSomos{
     background-color: $fondos;
 
-    .quienesSomos{
-        width: 100%;
-        height: 500px;
-        background-image: url("../img/equipo.jpg");
-        background-repeat: no-repeat;
-        background-size:cover;
-        text-align: justify ;
-        color:black;
-        font-size: 24px;        
+        .quienesSomos{
+            width: 100%;
+            height: 500px;
+            background-image: url("../img/equipo.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            text-align: justify ;
+            color:black;
+            font-size: 24px;        
     
 }
-    p{  
-        padding: 10px;
-        text-align: justify;
+        p{  
+            padding: 10px;
+            text-align: justify;
 }
 }
 
@@ -431,42 +426,52 @@
 
 }
 
-
+//RESPONSIVE PARRAFOS INTERACTIVOS INDEX
 @media (max-width: 992px){
     .encabezado__logo{
         display: none; 
 }
 }
 
-@media (max-width: 320px){
-    #parrafoEmbebido{
-        font-size: 10px;
-        margin: 0px;
+@media screen and (max-width: 800px){
+    .portadaPrincipal{
+        
+        #parrafoEmbebido{
+            font-size: 30px;
+            margin: 0px;
 }
-}
-@media (max-width: 480px){
-    #parrafoEmbebido{
-        font-size: 15px;
-        margin: 0px;
-}
-}
-@media (max-width: 800px){
-    #parrafoEmbebido{
-        font-size: 25px;
-        margin: 0px;
 }
 }
 
-@media (max-width: 800px){
-    #parrafoEmbebido{
-        font-size: 25px;
-        margin: 0px;
+@media screen and (max-width: 480px){
+    .portadaPrincipal{
+        
+        #parrafoEmbebido{
+            font-size: 25px;
+            margin: 0px;
+}
 }
 }
 
-@media (max-width:768px){
-    .mapa{
-        top: 5px; 
-    }
+@media screen and (max-width: 320px){
+    .portadaPrincipal{
+        
+        #parrafoEmbebido{
+            font-size: 20px;
+            margin: 0px;
+}
+}
+}
+
+//RESPONSIVE SECCIÓN MAPA/RESERVA INDEX
+
+@media screen and (max-width: 768px){
+    #mapaForm{
+    
+            #mapa{
+                padding: 10px;
+                margin-bottom: 10px;
+}
+}
 }
 

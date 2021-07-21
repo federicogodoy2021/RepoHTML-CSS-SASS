@@ -21,6 +21,13 @@
             text-decoration:none;
             font-weight: 300;
 }
+        .titulo1{
+            margin: 0px;
+            text-align: $textAlign;
+            background-color: $fondos;
+            border-bottom: 4px solid black;
+            padding: 20px;
+}
         .navegador{
             padding:0px;
             margin: 0px;
@@ -57,13 +64,6 @@
 }
 }
 
-.titulo1{
-    margin: 0px;
-    text-align: $textAlign;
-    background-color: $fondos;
-    border-bottom: 4px solid black;
-    padding: 20px;
-}
 
 @media (max-width: 1600px){
     #titulosGral{
