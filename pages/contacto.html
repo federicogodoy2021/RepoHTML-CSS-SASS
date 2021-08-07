@@ -11,10 +11,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--CSS Local-->
     <link rel="stylesheet" href="../css/style.css">
-    
+    <!--Fuente 1-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
-    
+    <!--Fuente 2-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -57,39 +57,45 @@
 
     <!--Sección Ayuda-->         
     <main class="mainAyuda">
-        <div id="cajaContacto">    
-            <form action="" method="get">
-
-                <!--Agrupo todo dentro de fieldset-->
-                <fieldset class="contactanos border border-3">
-                    <legend>Contactanos</legend>
-                    <label class="nombre" for="nombre">Nombre: </label><input class="campoNombre" type="text" name="nombre" placeholder="Ingrese su nombre..." id="nombre">
-                    <br>
-                    <label class="email" for="email">Email: </label><input class="campoEmail" type="text" placeholder="tucorreo@gmail.com" id="email">
-                    <br><br>
-                    <!--Elegir motivo-->                    
-                    <legend>Motivo de tu consulta:</legend>
-                    <select class="motivo" name="motivo" class="motivo">
-                        <option value="0">Problemas con la plataforma</option>
-                        <option value="1">Dudas sobre torneos</option>
-                        <option value="2">Dudas sobre complejos</option>
+        <div>
+            <form class="row g-3 formulario">
+                <div class="col-md-12">
+                    <label class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su nombre..." >
+                </div>
+                <div class="col-md-12 email">
+                    <label for="inputEmail4" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Ingrese su email...">
+                </div>                    
+                <div class="col-md-12">
+                    <label for="inputState" class="form-label">Motivo de tu consulta:</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>...</option>
+                        <option value="0">Sobre la plataforma</option>
+                        <option value="1">Sobre los deportes a practicar</option>
+                        <option value="2">Sobre los complejos asociados</option>
                         <option value="3">Sugerencias</option>
+                        <option value="4">Otro</option>
                     </select>
-                    <br><br>
-
-                    <!--Notificaciones-->         
-                    <label for="notificaciones">¿Deseas recibir nuestras notificaciones?</label> <input type="checkbox" name="¿Deseas recibir nuestras notificaciones?" id="notificaciones">
-                    <br><br>
-
-                    <textarea name="Comentario" class="comentario" cols="180" rows="10" placeholder="Comentario..."></textarea><br>
-                    <input type="submit" value="Enviar">
+                </div>
+                <div class="col-md-12">
+                    <div class="form-check notificacion">
+                        <label class="form-check-label" for="gridCheck">¿Deseas recibir nuestras notificaciones?</label>
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-check-label">Dejanos tus comentarios:</label>
+                    <textarea type="text" class="form-control comentarios" placeholder="Comentarios..."></textarea>
+                </div>
+                <div class="col-12 enviarReset">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                     <Input type="reset" value="Borrar campos">
-                    
-                </fieldset>
-
+                </div>
             </form>
         </div>
     </main>
+
     <footer class="footer">
         <!--Links de redes sociales-->
         <span class="redes">
@@ -103,6 +109,8 @@
             <p>Copyright © 2021 - Stadium Rosario - Politica de privacidad - Aviso legal</p>
         </span>
     </footer>
+    
+    <!--Enlace de BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     

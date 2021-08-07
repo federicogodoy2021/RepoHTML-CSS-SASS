@@ -53,6 +53,7 @@
             </div>
         </nav>
     </header>
+
     <!--Contenido principal con texto interactivo e imagen de fondo--> 
     <main>      
         <!--Imagen de fondo-->
@@ -83,7 +84,7 @@
                     </div>
                 </div>
             </div>
-        <!--FIN BOOTSTRAP EN DESCRIPCION DE LA PAGINA-->
+            <!--FIN BOOTSTRAP EN DESCRIPCION DE LA PAGINA-->
 
         </div>
             
@@ -92,14 +93,14 @@
             <!--Subtitulo de la sección-->
             <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="100" class="descripcionPag">Todo en un solo lugar</h2>
             <!--Beneficios de la página-->
-            <p class="CompAsociados">
+            <p class="textos">
                 Stadium Rosario llegó para simplificarte las cosas. Mediante nuestra app podrás reservar el complejo deportivo que más se adapte a vos. En este sitio podes buscar la mejor cancha filtrando la información en base a su precio, cercanía, disponibilidad, etc. Entre muchas funciones más, la app te permite desafiar a otros equipos de cualquiera de los deportes grupales que puedas imaginar (futbol, basquet, paintball, etc) o simplemente a a otros jugadores de forma individual (tenis, paddle, etc).<br>
 
                 Contamos con más de 50 complejos asociados en las principales ciudades del Gran Rosario. Cada complejo ofrece distintas disciplinas para practicar y muchos servicios extras que los destacan sobre el resto.
-
             </p>
         </section>
         <hr>
+
         <!--INICIO BOOTSTRAP EN LA SECCIÓN-->
         <!--Sección Mapa-->
         <section class="row" id="mapaForm">
@@ -119,8 +120,6 @@
                 <h2 data-aos="fade-left"  data-aos-duration="2000" data-aos-delay="100">Reservas</h2>
                 <!--Formulario de reservas, con el tipo de deporte a realizar, el día y la hora.-->
                 <form action="" method="get" class="mb-3">
-                    
-                     
                     <fieldset> 
                         <!--Elegir deporte-->
                         <div class="row">
@@ -165,7 +164,7 @@
                             </div>
                         </div>
                         <!-- Elegir hora -->
-                        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="row">
+                        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="row hora">
                             <div class="col-lg-5">
                                 <legend>Selecciona la hora:</legend>
                             </div>
@@ -173,8 +172,8 @@
                                 <input type="time" name="hora" step="3600"/>
                             </div>
                         </div>
-                        <input type="submit" value="Reservar">
-                        <Input type="reset" value="Borrar campos">
+                        <input class="btn btn-primary" type="submit" value="Enviar">
+                        <input class="btn btn-primary" type="reset" value="Borrar Campos">
                     
                     </fieldset>
                 </form>
@@ -197,7 +196,7 @@
             <p>Copyright © 2021 - Stadium Rosario - Politica de privacidad - Aviso legal</p>
         </span>
     </footer>
-    <!--Enlace de animaciones JS-->
+    <!--Enlace de animaciones JS y BOOTSTRAP-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

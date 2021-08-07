@@ -105,7 +105,6 @@
   margin: 0;
 }
 
-/*Propiedas de las etiquetas en gral*/
 a:link {
   text-decoration: none;
 }
@@ -149,9 +148,9 @@ body {
   margin: 0px;
   padding-top: 50px;
 }
-.CompAsociados, .descripcionPag {
+.textos, .descripcionPag {
   text-align: justify;
-  padding: 20px;
+  padding: 40px;
   padding-bottom: 0px;
   margin-top: 20px;
 }
@@ -162,6 +161,9 @@ body {
 }
 #mapaForm #reservas {
   padding: 10px;
+}
+#mapaForm .hora {
+  padding-bottom: 10px;
 }
 #mapaForm #mapa {
   padding: 10px;
@@ -185,7 +187,7 @@ body {
 }
 .mainQuienesSomos .quienesSomos {
   width: 100%;
-  height: 500px;
+  height: 700px;
   background-image: url("../img/equipo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,80 +196,30 @@ body {
   font-size: 24px;
 }
 .mainQuienesSomos p {
-  padding: 10px;
+  padding: 40px;
   text-align: justify;
-}
-
-.ayuda {
-  text-align: center;
-}
-
-.campoNombre:focus {
-  width: 220px;
-  transition: width 2s;
-}
-
-.contactanos legend {
-  margin: 0px;
-}
-
-.campoNombre {
-  position: relative;
-  left: 20px;
-  width: 200px;
-  margin: 10px;
-}
-
-.campoEmail:focus {
-  width: 220px;
-  transition: width 2s;
-}
-
-.campoEmail {
-  position: relative;
-  left: 39px;
-  width: 200px;
-  margin: 10px;
-}
-
-.motivo {
-  position: relative;
-  bottom: 35px;
-  left: 230px;
-}
-
-#cajaContacto {
-  display: flex;
-  justify-content: center;
-}
-
-.contactanos {
-  align-content: center;
-  justify-content: center;
-  margin: 20px;
-  padding: 10px;
-  width: 600px;
 }
 
 .mainAyuda {
   height: 700px;
 }
 
-.comentario:focus {
-  height: 200px;
-  width: 575px;
-  transition: height 3s, width 3s;
+.formulario {
+  padding: 30%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-
-.comentario {
-  width: 500px;
+.formulario .comentarios {
   height: 100px;
+  text-align: initial;
 }
 
 .todosLosComplejos {
   background-color: white;
   position: center;
   padding-bottom: 20px;
+  background-color: chocolate;
+  padding: 5%;
 }
 
 .complejosFutbol, .complejosTenis, .complejosBasquet {
@@ -369,7 +321,6 @@ body {
   padding: 10px;
   justify-content: space-evenly;
   align-content: center;
-  border: black 4px solid;
   margin: 80px;
   height: 100%;
 }
@@ -401,6 +352,9 @@ body {
   width: 100%;
   padding: 10px;
 }
+.valoracion h5 {
+  font-size: 24px;
+}
 
 .reseña {
   background-image: linear-gradient(to top, #795b3e, #f7b53a);
@@ -417,17 +371,15 @@ body {
 }
 
 .fotoUser {
-  background-image: url("../img/user.jpg");
+  background-image: url("../img/fotouser.png");
   height: 100px;
   width: 100px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  border-radius: 65px;
-  border: black 4px solid;
 }
 
 .nombreCiudad {
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .nombreUser {
@@ -445,7 +397,6 @@ body {
   grid-area: encuentro1;
   text-align: start;
   padding: 20px;
-  margin: -10px;
 }
 
 .postulados {
@@ -515,6 +466,69 @@ body {
     transform: rotate3d(0, 1, 0, 45deg);
   }
 }
+@media screen and (max-width: 1024px) {
+  .nombreUser {
+    font-size: 24px;
+  }
+
+  .nombreCiudad {
+    padding-left: 20px;
+  }
+
+  .valoracion h5 {
+    font-size: 20px;
+  }
+
+  .reseña p {
+    font-size: 16px;
+  }
+
+  .infoComplejo {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    position: relative;
+    top: 10px;
+  }
+  .infoComplejo h2 {
+    font-size: 24px;
+  }
+  .infoComplejo p {
+    font-size: 14px;
+  }
+
+  .mapaDesafios {
+    width: 45%;
+    height: 50%;
+    margin: 0px;
+    padding-bottom: 80px;
+  }
+
+  .encuentro {
+    padding: 10px;
+    margin: 0px;
+  }
+  .encuentro .condiciones {
+    font-size: 24px;
+  }
+  .encuentro h5 {
+    font-size: 20px;
+  }
+
+  .postulados .jugadores {
+    font-size: 24px;
+  }
+  .postulados h5 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mainQuienesSomos .quienesSomos {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+  }
+}
 @media (max-width: 992px) {
   .encabezado__logo {
     display: none;
@@ -524,6 +538,211 @@ body {
   .portadaPrincipal #parrafoEmbebido {
     font-size: 30px;
     margin: 0px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mainQuienesSomos .quienesSomos {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainQuienesSomos .quienesSomos {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainDesafios {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+
+  .nombreUser {
+    font-size: 16px;
+  }
+
+  .nombreCiudad {
+    padding-left: 14px;
+  }
+
+  .ciudadUser {
+    font-size: 16px;
+  }
+
+  .valoracion h5 {
+    font-size: 14px;
+  }
+
+  .infoComplejo {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    position: relative;
+    top: 10px;
+  }
+  .infoComplejo h2 {
+    font-size: 16px;
+  }
+
+  .mapaDesafios {
+    width: 45%;
+    height: 50%;
+    margin: 0px;
+    padding-bottom: 80px;
+  }
+
+  .encuentro {
+    padding: 10px;
+    margin: 0px;
+    height: auto;
+  }
+  .encuentro .condiciones {
+    font-size: 16px;
+  }
+  .encuentro h5 {
+    font-size: 14px;
+  }
+
+  .postulados .jugadores {
+    font-size: 16px;
+  }
+  .postulados h5 {
+    font-size: 14px;
+  }
+
+  .infoCancha p {
+    font-size: 12px;
+  }
+
+  .reseña {
+    height: auto;
+  }
+  .reseña p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #mapaForm #mapa {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .p1, .p2, .p3 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .formulario {
+    padding: 20%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .desafio {
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: 10% 10% 20% 20% 20% 20%;
+    grid-template-areas: "user" "valoracion" "reseña" "encuentro" "info" "postulados";
+    grid-row-gap: 10px;
+    align-content: center;
+    height: 100%;
+  }
+
+  .user {
+    grid-area: user;
+  }
+  .user .fotoUser {
+    height: 100%;
+  }
+
+  .valoracion {
+    grid-area: valoracion;
+  }
+  .valoracion h5 {
+    font-size: 12px;
+  }
+
+  .reseña {
+    grid-area: reseña;
+  }
+  .reseña p {
+    font-size: 12px;
+  }
+
+  .encuentro {
+    grid-area: encuentro;
+    padding: 10px;
+    margin: 0px;
+    height: auto;
+  }
+  .encuentro .condiciones {
+    font-size: 14px;
+  }
+  .encuentro h5 {
+    font-size: 12px;
+  }
+
+  .postulados {
+    grid-area: postulados;
+  }
+  .postulados .jugadores {
+    font-size: 14px;
+  }
+  .postulados h5 {
+    font-size: 12px;
+  }
+
+  .infoComplejo {
+    grid-area: info;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    position: relative;
+    margin: 0px;
+    top: 10px;
+  }
+  .infoComplejo h2 {
+    font-size: 14px;
+  }
+  .infoComplejo p {
+    font-size: 12px;
+  }
+
+  .infoCancha p {
+    font-size: 9px;
+  }
+
+  .mapaDesafios {
+    width: 45%;
+    height: 200px;
+    margin: 0px;
+  }
+
+  .ciudadUser {
+    font-size: 16px;
+  }
+
+  .nombreCiudad {
+    padding-left: 14px;
+  }
+  .nombreCiudad .ciudadUser {
+    font-size: 10px;
+  }
+
+  .nombreUser {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .formulario {
+    padding: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -536,12 +755,6 @@ body {
   .portadaPrincipal #parrafoEmbebido {
     font-size: 20px;
     margin: 0px;
-  }
-}
-@media screen and (max-width: 768px) {
-  #mapaForm #mapa {
-    padding: 10px;
-    margin-bottom: 10px;
   }
 }
 
