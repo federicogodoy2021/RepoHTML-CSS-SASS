@@ -119,7 +119,7 @@
                 <!--Subtitulo de la sección-->
                 <h2 data-aos="fade-left"  data-aos-duration="2000" data-aos-delay="100">Reservas</h2>
                 <!--Formulario de reservas, con el tipo de deporte a realizar, el día y la hora.-->
-                <form action="" method="get" class="mb-3">
+                <form class="mb-3" id="miForm">
                     <fieldset> 
                         <!--Elegir deporte-->
                         <div class="row">
@@ -127,14 +127,14 @@
                                 <legend data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">Deporte:</legend>
                             </div>
                             <div data-aos="fade-up"  data-aos-duration="2000" data-aos-delay="100" class="col-lg-5">
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" id="miSelectDeporte">
                                     <option selected>Elige un deporte</option>
-                                    <option value="0">Futbol</option>
-                                    <option value="1">Tenis</option>
-                                    <option value="2">Basquet</option>
-                                    <option value="3">Paddle</option>
-                                    <option value="4">Paintball</option>
-                                    <option value="5">Karting</option>
+                                    <option value="futbol">Futbol</option>
+                                    <option value="Tenis">Tenis</option>
+                                    <option value="basquet">Basquet</option>
+                                    <option value="paddle">Paddle</option>
+                                    <option value="paintball">Paintball</option>
+                                    <option value="karting">Karting</option>
                                 </select>
                             </div>                            
                         </div>
@@ -144,13 +144,13 @@
                                 <legend>Ciudad:</legend>
                             </div>
                         <div class="col-lg-5">
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" id="miSelectCiudad">
                                     <option selected>Elige una ciudad</option>
-                                    <option value="0">Rosario</option>
-                                    <option value="1">Granadero Baigorria</option>
-                                    <option value="2">Funes</option>
-                                    <option value="3">Roldan</option>
-                                    <option value="4">V.G. Galvez</option>
+                                    <option value="Rosario">Rosario</option>
+                                    <option value="Granadero Baigorria">Granadero Baigorria</option>
+                                    <option value="Funes">Funes</option>
+                                    <option value="Roldan">Roldan</option>
+                                    <option value="V.G. Galvez">V.G. Galvez</option>
                                 </select>
                             </div>                            
                         </div>
@@ -160,7 +160,7 @@
                                 <legend>Selecciona la fecha:</legend>
                             </div>
                             <div class="col-lg-5">    
-                                <input type="date" name="fecha" min="2021-01-01" max="2022-12-31" step="1" />
+                                <input type="date" name="fecha" min="2021-01-01" max="2022-12-31" step="1" id="miInputFecha"/>
                             </div>
                         </div>
                         <!-- Elegir hora -->
@@ -169,14 +169,16 @@
                                 <legend>Selecciona la hora:</legend>
                             </div>
                             <div class="col-lg-5">
-                                <input type="time" name="hora" step="3600"/>
+                                <input type="time" name="hora" step="3600" id="miInputHora"/>
                             </div>
                         </div>
-                        <input class="btn btn-primary" type="submit" value="Enviar">
-                        <input class="btn btn-primary" type="reset" value="Borrar Campos">
-                    
+                        <button class="btn btn-primary" value="Enviar" id="btn-enviar">Agregar reserva</button>
+                        <button class="btn btn-primary" type="reset" value="Borrar Campos" id="btn-borrar">Borrar campos</button>
+                        
                     </fieldset>
                 </form>
+                <ul id="miListaUl"></ul>
+
             </div>
             <!--FIN DE FORMULARIO BOOTSTRAP-->
         </section>
@@ -197,6 +199,7 @@
         </span>
     </footer>
     <!--Enlace de animaciones JS y BOOTSTRAP-->
+    <script src="js/proyecto2.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
